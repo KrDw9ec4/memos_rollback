@@ -36,7 +36,7 @@ def create_database(
 def connect_database(
         old_db_path: str = old_database_path_v0210,
         new_db_path: str = new_database_path_v0171,
-) -> Optional[tuple[sqlite3.Connection, sqlite3.Connection]]:
+) -> tuple[sqlite3.Connection, sqlite3.Connection]:
     """
     连接到两个 SQLite 数据库。
 
